@@ -16,4 +16,4 @@ var number = function(busStops){
     count = count + stop[0] - stop[1];
     return count;
   }, 0)
-}
+}  
