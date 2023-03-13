@@ -58,5 +58,5 @@ function queueTime(customers, n) {
     lines.sort((a,b) => a-b)[0] += t; 
   })
   
-  return lines[lines.length-1];  
+  return lines.sort((a,b) => a-b)[lines.length-1];  
 }
