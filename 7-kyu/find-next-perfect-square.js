@@ -10,3 +10,18 @@
 // 625 --> 676
 // 114 --> -1 since 114 is not a perfect square
 
+function findNextSquare(sq) {
+  
+  if ((sq) ** 0.5 != ((sq) ** 0.5).toFixed()) {
+    return -1;
+  }
+  
+  let perfectSq = sq + 1;
+  
+  while ( (perfectSq) ** 0.5 != ((perfectSq) ** 0.5).toFixed() ) {
+      perfectSq += 1;
+  }
+  
+  return perfectSq;
+  
+}
